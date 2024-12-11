@@ -1,0 +1,44 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #002a5b;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+.footer {
+    background-color: #002a5b;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.tab-content {
+    margin-top: 30px;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #00115b;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}

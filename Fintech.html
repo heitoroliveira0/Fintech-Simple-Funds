@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Funds</title>
+    <link rel="stylesheet" href="fintech.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Simple Funds</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#usuario" data-bs-toggle="tab">Usuário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conta" data-bs-toggle="tab">Conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#credito" data-bs-toggle="tab">Solicitações de Crédito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos" data-bs-toggle="tab">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pagamentos" data-bs-toggle="tab">Pagamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#transacoes" data-bs-toggle="tab">Transações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container tab-content">
+        <!-- Usuário -->
+        <div class="tab-pane fade show active" id="usuario">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <i class="fas fa-user"></i> Usuário
+                </div>
+                <div class="card-body">
+                    <p><strong>Nome:</strong> João Silva</p>
+                    <p><strong>Email:</strong> joao.silva@email.com</p>
+                    <p><strong>Telefone:</strong> (11) 91234-5678</p>
+                    <p><strong>Data de Cadastro:</strong> 15/01/2022</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conta -->
+        <div class="tab-pane fade" id="conta">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <i class="fas fa-wallet"></i> Conta
+                </div>
+                <div class="card-body">
+                    <p><strong>Tipo de Conta:</strong> Corrente</p>
+                    <p><strong>Data de Abertura:</strong> 01/01/2022</p>
+                    <p><strong>Saldo:</strong> R$ 10.000,00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solicitações de Crédito -->
+        <div class="tab-pane fade" id="credito">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-warning text-dark">
+                    <i class="fas fa-hand-holding-usd"></i> Solicitações de Crédito
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Valor Solicitado: R$ 5.000,00 - Status: Aprovado - Data: 20/02/2023</li>
+                        <li>Valor Solicitado: R$ 3.000,00 - Status: Pendente - Data: 10/03/2023</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Serviços -->
+        <div class="tab-pane fade" id="servicos">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <i class="fas fa-briefcase"></i> Serviços Contratados
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Serviço: Empréstimo Pessoal - Valor: R$ 2.000,00 - Data de Contratação: 15/04/2023</li>
+                        <li>Serviço: Consultoria Financeira - Valor: R$ 500,00 - Data de Contratação: 10/05/2023</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagamentos -->
+        <div class="tab-pane fade" id="pagamentos">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-secondary text-white">
+                    <i class="fas fa-credit-card"></i> Pagamentos
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Valor: R$ 1.000,00 - Destinatário: Escola XYZ - Data: 05/05/2023 - Descrição: Mensalidade Escolar</li>
+                        <li>Valor: R$ 500,00 - Destinatário: Loja ABC - Data: 10/06/2023 - Descrição: Material de Escritório</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transações -->
+        <div class="tab-pane fade" id="transacoes">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-danger text-white">
+                    <i class="fas fa-exchange-alt"></i> Transações
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Tipo: Depósito - Valor: R$ 2.000,00 - Data: 15/04/2023 - Tipo de Transação: Crédito</li>
+                        <li>Tipo: Saque - Valor: R$ 500,00 - Data: 20/04/2023 - Tipo de Transação: Débito</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Simple Funds. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
+
+
+
